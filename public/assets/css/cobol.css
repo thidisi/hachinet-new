@@ -1,0 +1,193 @@
+.box__title p {
+    font-size: 18px;
+    text-align: justify;
+}
+.box__why_text__left {
+    background: #FDC331;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+.box__why_text__left p {
+    font-size: 16px;
+}
+
+
+.col-md-4 {
+    position: relative;
+    min-height: 1px;
+    position: relative;
+    width: 33.333333333333%;
+    padding: 0!important;
+    }
+
+.box__why_text__left::after {
+    border-left: 20px solid #fdc330;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.box__why_text__right::after,
+.box__why_text__left::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -40px;
+    top: 25px;
+}
+
+
+.box__why_text__right::after {
+    border-left: 20px solid #83B9FD;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.box__why_text__right {
+    background: #83B9FD;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.box__why_text__left.position-left::after,
+.box__why_text__right.position-left::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -40px;
+    top: 50px;
+    right: 0;
+}
+
+
+.box__why_text__left.position-left::after {
+    border-left: 20px solid transparent;
+    border-right: 20px solid #fdc330;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.box__why_text__right.position-left::after {
+    border-left: 20px solid transparent;
+    border-right: 20px solid #83B9FD;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+#service_provided {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;;
+}
+
+.box__icon {
+    height: 100%;
+    padding-top: 1.5rem!important;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.box__icon span {
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+
+.box__icon .icon-development {
+    background: url("../img/service/icon-app-development.png");
+}
+
+.box__icon .icon-maintenance {
+    background: url("../img/service/icon-maintenance.png");
+}
+
+.box__icon .icon-deployment {
+    background: url("../img/service/icon-deployment.png");
+}
+
+.box__icon .icon-report {
+    background: url("../img/service/icon-report.png");
+}
+
+#product_solutions {
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.box__solutions {
+    border-radius: 4px;
+}
+
+.box__why_text__center {
+    background: #fdc330;
+    text-align:center;
+    position: relative;
+}
+
+.box__why_text__center::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    bottom: -40px;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fdc330;
+    border-bottom: 20px solid transparent;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 767px) {
+    .box__why {
+        flex-direction: column;
+        display: block !important;
+    }
+    .box__why_text__right.position-left::after,
+    .box__why_text__left.position-left::after,
+    .box__why_text__right::after,
+    .box__why_text__left::after {
+        content: none;
+    }
+}
+
+@media (max-width: 667px) {
+    .header {
+        background-position: left center;
+    }
+    .header .box__img {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .box__why {
+        flex-direction: column;
+    }
+    .box__why_text__right.position-left::after,
+    .box__why_text__left.position-left::after,
+    .box__why_text__right::after,
+    .box__why_text__left::after {
+        content: none;
+    }
+    .box__icon {
+        padding-bottom: 15px;
+    }
+    .box__icon h3 {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 800px) AND (max-width: 990px) {
+    .box__icon {
+        padding-bottom: 15px;
+    }
+    .box__icon h3 {
+        font-size: 20px;
+    }
+}
